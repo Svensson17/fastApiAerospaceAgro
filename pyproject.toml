@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "fastapiaerospaceagro"
+version = "0.1.0"
+description = ""
+authors = ["Svennson17 <kiryl.shvedau@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.78.0"
+uvicorn = "^0.17.6"
+sentinelsat = "^1.1.1"
+geetools = "^0.6.14"
+rasterio = "^1.2.10"
+retrying = "^1.3.3"
+Shapely = "^1.8.2"
+geojsonio = "^0.0.3"
+geopandas = "^0.10.2"
+Fiona = "^1.8.21"
+geos = "^0.2.3"
+folium = "^0.12.1"
+selenium = "^4.2.0"
+GDAL = "^3.5.0"
+websocket-client = "^1.3.2"
+requests = "^2.28.0"
+matplotlib = "^3.5.2"
+numpy = "^1.22.4"
+earthengine-api = "^0.1.315"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
