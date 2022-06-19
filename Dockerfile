@@ -1,8 +1,3 @@
-<<<<<<< Updated upstream
-# Pull base image
-=======
-# dockerfile
->>>>>>> Stashed changes
 FROM python:3.9-slim
 # Set environment varibles
 COPY . /app
