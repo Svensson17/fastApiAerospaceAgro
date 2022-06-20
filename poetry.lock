@@ -79,6 +79,26 @@ optional = false
 python-versions = "~=3.7"
 
 [[package]]
+name = "cartopy"
+version = "0.20.2"
+description = "A cartographic python library with Matplotlib support for visualisation"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+matplotlib = ">=3.1"
+numpy = ">=1.18"
+pyproj = ">=3.0.0"
+pyshp = ">=2.1"
+shapely = ">=1.6.4"
+
+[package.extras]
+ows = ["OWSLib (>=0.18.0)", "pillow (>=6.1.0)"]
+plotting = ["GDAL (>=2.3.2)", "pillow (>=6.1.0)", "scipy (>=1.3.1)"]
+tests = ["flufl.lock", "packaging (>=20)", "pytest (>=5.1.2)"]
+
+[[package]]
 name = "certifi"
 version = "2022.5.18.1"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -1240,7 +1260,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "5084d0af333ecf26ed2d0d30d2f3b8429a9cf0b5ba515739065059e659915c87"
+content-hash = "10d1129a135b580bcdded468c125aaee53a54b2d1486bd21a4bc1d5d87bec5c9"
 
 [metadata.files]
 affine = [
@@ -1270,6 +1290,9 @@ branca = [
 cachetools = [
     {file = "cachetools-5.2.0-py3-none-any.whl", hash = "sha256:f9f17d2aec496a9aa6b76f53e3b614c965223c061982d434d160f930c698a9db"},
     {file = "cachetools-5.2.0.tar.gz", hash = "sha256:6a94c6402995a99c3970cc7e4884bb60b4a8639938157eeed436098bf9831757"},
+]
+cartopy = [
+    {file = "Cartopy-0.20.2.tar.gz", hash = "sha256:4d08c198ecaa50a6a6b109d0f14c070e813defc046a83ac5d7ab494f85599e35"},
 ]
 certifi = [
     {file = "certifi-2022.5.18.1-py3-none-any.whl", hash = "sha256:f1d53542ee8cbedbe2118b5686372fb33c297fcd6379b050cca0ef13a597382a"},

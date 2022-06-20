@@ -1,0 +1,5 @@
+.idea
+.DS_Store
+geojson_files
+.venv
+__pycache__
